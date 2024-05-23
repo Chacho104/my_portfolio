@@ -1,112 +1,203 @@
 import Image from "next/image";
 
+import { MdOutlineDesignServices } from "react-icons/md";
+import { FaCodeBranch } from "react-icons/fa";
+import { MdDevices } from "react-icons/md";
+import { HiOutlineChat } from "react-icons/hi";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+
+import Container from "@/components/ui/container";
+import Card from "@/components/ui/card";
+import Link from "next/link";
+
+const socialLinks = [
+  {
+    name: "LinkedIn",
+    icon: FaLinkedinIn,
+    href: "https://www.linkedin.com/in/churchilowino/",
+  },
+  { name: "GitHub", icon: FaGithub, href: "https://github.com/Chacho104" },
+  { name: "Email", icon: HiOutlineMail, href: "mailto:chachowino75@gmail.com" },
+];
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
+    <main>
+      <div>
+        <Container>
+          <nav className="flex justify-between items-center py-4">
+            <div className="text-3xl font-bold text-brand-200">chacho.</div>
+            <Link
+              href="/contact"
+              className="flex items-center justify-center gap-x-2 w-auto bg-transparent border-2 border-brand-200 rounded-full px-4 py-2 text-brand-200 hover:bg-brand-200 hover:text-white disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none transition"
+            >
+              Say Hello
+            </Link>
+          </nav>
+          <div className="flex flex-col items-center justify-center gap-y-8 py-20 text-center">
+            <h1 className="text-5xl font-bold leading-snug">
+              Designer & Full-stack Software Developer
+            </h1>
+            <p className="text-lg">
+              I design and code dynamic, interactive, accessible, and responsive
+              applications for the web.
+            </p>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+              src="/images/profile-pic.jpeg"
+              alt="My Profile Image"
+              width={200}
+              height={200}
+              className="rounded-full bg-transparent"
             />
-          </a>
+          </div>
+        </Container>
+      </div>
+      <div className="bg-brand-100 h-[450px]">
+        <Container>
+          <div className="flex flex-col items-center justify-center gap-y-8 py-20 text-center">
+            <h2 className="text-4xl font-semibold text-white leading-snug">
+              Hello there, great to connect with you!
+            </h2>
+            <p className="w-full lg:w-[60%] text-center text-neutral-200 text-lg tracking-wider">
+              My name is Churchil Owino, and I am passionate about using modern
+              technologies and best practices to turn ideas into software
+              solutions that thrive on the web.
+            </p>
+          </div>
+        </Container>
+      </div>
+      <div>
+        <Container>
+          <div className="h-auto bg-white -mt-[20%] sm:-mt-[20%] lg:-mt-[15%] xl:-mt-[10%] rounded-xl flex justify-between p-8 shadow-md flex-wrap sm:flex-nowrap gap-y-10 sm:gap-y-0">
+            <div className="flex flex-col items-center text-center gap-y-4 px-4">
+              <div className="w-16 h-16 rounded-full bg-brand-200 flex items-center justify-center text-center text-white">
+                <MdOutlineDesignServices size={28} />
+              </div>
+              <h3 className="text-xl font-semibold">
+                Fully Responisve Designs
+              </h3>
+              <p>
+                I offer responsive design services that ensure your web
+                applications are optimized for viewing on any device, providing
+                a seamless user experience across desktops, laptops, tablets,
+                and smartphones.
+              </p>
+              <div>
+                <h4 className="text-lg text-brand-200 font-medium">
+                  Preferred Tools:
+                </h4>
+                <p className="font-medium">Figma & Canvas</p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center text-center gap-y-4 border-x-0 sm:border-x border-x-neutral-300 px-4">
+              <div className="flex flex-col items-center text-center gap-y-4">
+                <div className="w-16 h-16 rounded-full bg-brand-200 flex items-center justify-center text-center text-white">
+                  <MdDevices size={28} />
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold">Front-end Development</h3>
+              <p>
+                I pay meticulous attention to detail, ensuring that every
+                element of the design is perfectly implemented and functions
+                smoothly across all devices and browsers.
+              </p>
+              <div>
+                <h4 className="text-lg text-brand-200 font-medium">
+                  Preferred Tools:
+                </h4>
+                <p className="font-medium">
+                  HTML5, CSS3, Sass, Tailwind CSS, Bootstrap, Chakra UI, Shadcn
+                  UI, JavaScript, React.js, Next.js, Git & GitHub, Netlify,
+                  Vercel, & VS Code.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center text-center gap-y-4 px-4">
+              <div className="flex flex-col items-center text-center gap-y-4">
+                <div className="w-16 h-16 rounded-full bg-brand-200 flex items-center justify-center text-center text-white">
+                  <FaCodeBranch size={28} />
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold">Back-end Development</h3>
+              <p>
+                I ensure that your application's logic, database interactions,
+                and server configurations are secure, efficient, reliable and
+                easily scalable.
+              </p>
+              <div>
+                <h4 className="text-lg text-brand-200 font-medium">
+                  Preferred Tools:
+                </h4>
+                <p className="font-medium">
+                  Node.js, Next.js, Mongo DB, Firebase, AWS RDS, AWS S3, Prisma,
+                  Cloudinary, Git & GitHub, Netlify, Vercel, VPS, & VS Code.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+      <div>
+        <Container>
+          <div className="my-10 text-center flex flex-col gap-y-4">
+            <h1 className="text-4xl font-bold leading-snug">Recent Projects</h1>
+            <p>
+              Here are some of the projects I have designed and built over the
+              past year.
+            </p>
+            <div className="flex items-center justify-between gap-x-3 lg:gap-x-10 pt-6 flex-wrap sm:flex-nowrap gap-y-10 sm:gap-y-0">
+              <Card
+                imageUrl="/images/saruk-banner-4.png"
+                title="Saruk"
+                description="Leading seller of laptops, desktops, tablets, phones, projectors, printers, and many more in Nairobi, Kenya."
+                link="https://saruk.co.ke/"
+              />
+              <Card
+                imageUrl="/images/adir-banner.jpeg"
+                title="Adir Solutions"
+                description="Web design and development agency driving growth in small businesses through the power of technology."
+                link="https://adirsolutions.com/"
+              />
+              <Card
+                imageUrl="/images/little-lemon-banner-2.jpeg"
+                title="Little Lemon"
+                description="Simple implementation of ordering and table booking process for Little Lemon, an imaginary restaurant."
+                link="https://little-lemon-theta.vercel.app/"
+              />
+            </div>
+          </div>
+        </Container>
+      </div>
+      <div className="bg-white text-center flex flex-col gap-y-4">
+        <h1 className="text-4xl font-bold leading-snug">
+          Need to get a project done?
+        </h1>
+        <p className="font-medium">
+          Let&#39;s have a chat about the project and who knows? Maybe we can
+          build the next big thing...together!
+        </p>
+        <div className="pt-4 flex items-center justify-center">
+          <Link
+            href="/contact"
+            className="flex items-center justify-center gap-x-2 w-auto bg-transparent border-2 border-brand-200 rounded-full px-6 py-2 text-brand-200 hover:bg-brand-200 hover:text-white disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none transition"
+          >
+            <HiOutlineChat size={24} />
+            Start a conversation
+          </Link>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="bg-black h-24 mt-10 flex items-center justify-center gap-x-10">
+        {socialLinks.map((link) => (
+          <Link
+            key={link.name}
+            href={link.href}
+            className="hover:text-brand-200 text-white"
+          >
+            <link.icon size={38} />
+          </Link>
+        ))}
       </div>
     </main>
   );
