@@ -16,7 +16,9 @@ const ContactMePage = () => {
     <div>
       <Container>
         <nav className="flex justify-between items-center py-4">
-          <div className="text-3xl font-bold text-brand-200">chacho.</div>
+          <Link href="/" className="text-3xl font-bold text-brand-200">
+            chacho.
+          </Link>
           <Link
             href="/"
             className="flex items-center justify-center gap-x-2 w-auto bg-transparent border-2 border-brand-200 rounded-full px-4 py-2 text-brand-200 hover:bg-brand-200 hover:text-white disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none transition"
