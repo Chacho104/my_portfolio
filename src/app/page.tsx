@@ -129,9 +129,9 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold">Back-end Development</h3>
               <p>
-                I ensure that your application's logic, database interactions,
-                and server configurations are secure, efficient, reliable and
-                easily scalable.
+                I ensure that your application&#39;s logic, database
+                interactions, and server configurations are secure, efficient,
+                reliable and easily scalable.
               </p>
               <div>
                 <h4 className="text-lg text-brand-200 font-medium">
