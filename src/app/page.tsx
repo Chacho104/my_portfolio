@@ -200,6 +200,7 @@ export default function Home() {
       <div className="bg-black h-24 mt-10 flex items-center justify-center gap-x-10">
         {socialLinks.map((link) => (
           <Link
+            target="_blank"
             key={link.name}
             href={link.href}
             className="hover:text-brand-200 text-white"
