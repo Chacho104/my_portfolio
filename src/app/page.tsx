@@ -79,8 +79,8 @@ export default function Home() {
       </div>
       <div>
         <Container>
-          <div className="h-auto bg-white -mt-[20%] sm:-mt-[20%] lg:-mt-[15%] xl:-mt-[10%] rounded-xl flex justify-between p-8 shadow-md flex-wrap sm:flex-nowrap gap-y-10 sm:gap-y-0">
-            <div className="flex flex-col items-center text-center gap-y-4 px-4">
+          <div className="h-auto bg-white -mt-[20%] sm:-mt-[20%] lg:-mt-[15%] xl:-mt-[10%] rounded-xl flex justify-between p-8 shadow-md flex-wrap lg:flex-nowrap gap-y-10 lg:gap-y-0">
+            <div className="flex flex-col items-center text-center gap-y-4 lg:px-4 lg:flex-1">
               <div className="w-16 h-16 rounded-full bg-brand-200 flex items-center justify-center text-center text-white">
                 <MdOutlineDesignServices size={28} />
               </div>
@@ -100,7 +100,7 @@ export default function Home() {
                 <p className="font-medium">Figma & Canvas</p>
               </div>
             </div>
-            <div className="flex flex-col items-center text-center gap-y-4 border-x-0 sm:border-x border-x-neutral-300 px-4">
+            <div className="flex flex-col items-center text-center gap-y-4 border-x-0 lg:border-x border-x-neutral-300 lg:px-4 lg:flex-1">
               <div className="flex flex-col items-center text-center gap-y-4">
                 <div className="w-16 h-16 rounded-full bg-brand-200 flex items-center justify-center text-center text-white">
                   <MdDevices size={28} />
@@ -123,7 +123,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col items-center text-center gap-y-4 px-4">
+            <div className="flex flex-col items-center text-center gap-y-4 lg:px-4 lg:flex-1">
               <div className="flex flex-col items-center text-center gap-y-4">
                 <div className="w-16 h-16 rounded-full bg-brand-200 flex items-center justify-center text-center text-white">
                   <FaCodeBranch size={28} />
@@ -156,7 +156,7 @@ export default function Home() {
               Here are some of the projects I have designed and built over the
               past year.
             </p>
-            <div className="flex items-center justify-between gap-x-3 lg:gap-x-10 pt-6 flex-wrap sm:flex-nowrap gap-y-10 sm:gap-y-0">
+            <div className="flex items-center justify-between gap-x-3 lg:gap-x-6 pt-6 flex-wrap lg:flex-nowrap gap-y-6 lg:gap-y-0">
               <Card
                 imageUrl="/images/saruk-banner-4.png"
                 title="Saruk"
