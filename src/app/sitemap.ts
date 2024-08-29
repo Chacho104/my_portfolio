@@ -21,8 +21,8 @@ const escapeXml = (unsafe: string) => {
 };
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const routes = ["", "about", "reviews"].map((route) => ({
-    url: escapeXml(`https://saruk.co.ke/${route}`),
+  const routes = ["", "contact"].map((route) => ({
+    url: escapeXml(`https://www.chachowino.com/${route}`),
     lastModified: escapeXml(new Date().toISOString()),
   }));
 
