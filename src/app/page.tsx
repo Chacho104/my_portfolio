@@ -47,11 +47,11 @@ export default function Home() {
           </nav>
           <div className="flex flex-col items-center justify-center gap-y-8 py-20 text-center">
             <h1 className="text-5xl font-bold leading-snug">
-              Designer & Full-stack Software Developer
+              Designer & Full-stack Software Engineer
             </h1>
             <p className="text-lg">
               I design and code dynamic, interactive, accessible, and responsive
-              applications for the web.
+              web and mobile applications.
             </p>
             <Image
               src="/images/profile-pic.jpeg"
@@ -117,9 +117,9 @@ export default function Home() {
                   Preferred Tools:
                 </h4>
                 <p className="font-medium">
-                  HTML5, CSS3, Sass, Tailwind CSS, Bootstrap, Chakra UI, Shadcn
-                  UI, JavaScript, React.js, Next.js, Git & GitHub, Netlify,
-                  Vercel, & VS Code.
+                  HTML5, CSS3, Sass, SCSS, Tailwind CSS, Bootstrap, Shadcn UI,
+                  JavaScript, React.js, Next.js, Git & GitHub, Netlify, Vercel,
+                  & VS Code.
                 </p>
               </div>
             </div>
@@ -140,7 +140,7 @@ export default function Home() {
                   Preferred Tools:
                 </h4>
                 <p className="font-medium">
-                  Node.js, Next.js, Mongo DB, Firebase, AWS RDS, AWS S3, Prisma,
+                  Next.js, Mongo DB, Firebase, AWS RDS, AWS S3, Prisma,
                   Cloudinary, Git & GitHub, Netlify, Vercel, VPS, & VS Code.
                 </p>
               </div>
