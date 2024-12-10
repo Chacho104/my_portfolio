@@ -140,8 +140,9 @@ export default function Home() {
                   Preferred Tools:
                 </h4>
                 <p className="font-medium">
-                  Next.js, Mongo DB, Firebase, AWS RDS, AWS S3, Prisma,
-                  Cloudinary, Git & GitHub, Netlify, Vercel, VPS, & VS Code.
+                  Node.js, Express.js, MySQL, PostgreSQL, Mongo DB, Firebase,
+                  AWS RDS, AWS S3, Prisma, Cloudinary, Git & GitHub, Docker &
+                  Kubernetes, Netlify, Vercel, VPS, & VS Code.
                 </p>
               </div>
             </div>
